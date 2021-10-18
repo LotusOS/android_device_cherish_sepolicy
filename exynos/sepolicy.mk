@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all exynos products
-# that inherit from cherish
+# that inherit from lotus
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -10,15 +10,15 @@ endif
 endif
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/cherish/sepolicy/exynos/private
+    device/lotus/sepolicy/exynos/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/cherish/sepolicy/exynos/dynamic \
-    device/cherish/sepolicy/exynos/system
+    device/lotus/sepolicy/exynos/dynamic \
+    device/lotus/sepolicy/exynos/system
 
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/cherish/sepolicy/exynos/dynamic \
-    device/cherish/sepolicy/exynos/vendor
+    device/lotus/sepolicy/exynos/dynamic \
+    device/lotus/sepolicy/exynos/vendor
 endif
